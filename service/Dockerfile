@@ -1,5 +1,8 @@
 from ubuntu:18.04
-run apt-get update && apt-get install -y xinetd
+run echo "travis_fold:start:Dapt\033[33;1mservice Dockerfile apt\033[0m" && \
+    apt-get -qq update && apt-get install -qq xinetd && \
+    echo "\ntravis_fold:end:Dapt\r"
+
 
 copy speedrun-001 /
 run chmod 755 /speedrun-001

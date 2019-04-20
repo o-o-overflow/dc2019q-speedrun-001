@@ -6,6 +6,8 @@ tags:
 
 violates_flag_format: false # if this is not "true", the flag is verfied against the flag format
 
+allow_egress: False
+
 flag: "OOO{Ask any pwner. Any real pwner. It don't matter if you pwn by an inch or a m1L3. pwning's pwning.}" # this is the flag of the service
 
 # Type can be normal or king_of_the_hill
