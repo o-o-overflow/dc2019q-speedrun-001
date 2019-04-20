@@ -2,4 +2,4 @@
 
 exec 2>/dev/null
 
-/speedrun-001
+timeout --foreground -k 300 240 stdbuf -i0 -o0 -e0 /speedrun-001
