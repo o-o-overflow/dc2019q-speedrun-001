@@ -1,6 +1,9 @@
 # Info for the schoreboard
 service_name: "speedrun-001"
-description: "The Fast and the Furious"
+description: |
+  The Fast and the Furious
+
+  For all speedrun challenges, flag is in `/flag`
 tags:
   - pwn
 
