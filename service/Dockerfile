@@ -10,6 +10,7 @@ run chmod 755 /speedrun-001
 run touch /flag && chmod 644 /flag && echo "OOO{Ask any pwner. Any real pwner. It don't matter if you pwn by an inch or a m1L3. pwning's pwning.}" > /flag
 copy service.conf /service.conf
 copy wrapper /wrapper
+copy banner_fail /
 
 expose 31337
 
