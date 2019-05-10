@@ -7,7 +7,7 @@
 /* 
 
    Compilation:
-   gcc -o speedrun-001 -no-pie -static -fno-stack-protector speedrun-001.c
+   gcc -o speedrun-001 -no-pie -static -fno-stack-protector speedrun-001.c && strip speedrun-001
 
  */
 
@@ -32,6 +32,12 @@ void say_goodbye()
 int main(int argc, char** argv)
 {
    setvbuf(stdout, NULL, _IONBF, 0);
+
+   if (getenv("DEBUG") == NULL)
+   {
+	  alarm(5);
+   }
+
 
    say_hello();
    what_do_they_say();
